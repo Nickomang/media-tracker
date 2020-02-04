@@ -1,0 +1,14 @@
+{
+  "name": "media_tracker",
+  "version": "1.0.0",
+  "description": "Node API for media tracker",
+  "author": "Nicolas Oman",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "uuid": "^3.4.0"
+  }
+}
