@@ -14,20 +14,20 @@ Each media item (a book, game, movie, etc.) has its own entry in `media.json`. T
 
 ```json
 id : {
-    "id": \<string>,
-    "name": \<string>,
-    "completed": \<boolean>,
-    "achievements": {
-        achievementId: {
-            "description": \<string>,
-            "date": \<int>
+    "id": &lt;string>,
+    "name": &lt;string>,
+    "completed": &lt;boolean>,
+    "achievements": {[
+        0: {
+            "description": &lt;string>,
+            "date": &lt;int>
         },
         ...
         },
-        achievementId: {
-            "description": \<string>
+        N: {
+            "description": &lt;string>
         }
-    }
+    ]}
 }
 ```
 
@@ -36,12 +36,12 @@ Achievements are self-defined milestones of importance. The only required attrib
 ```json
 {
 ...
-    "achievements": {
-        0: {
+    "achievements": {[
+        "0": {
             "description": "Finished watching for the first time",
             "date": 809247600000
         }
-    }
+    ]}
 }
 ```
 
