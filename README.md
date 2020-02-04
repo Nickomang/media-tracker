@@ -14,18 +14,18 @@ Each media item (a book, game, movie, etc.) has its own entry in `media.json`. T
 
 ```json
 id : {
-    "id": <string>,
-    "name": <string>,
-    "completed": <boolean>,
+    "id": \<string>,
+    "name": \<string>,
+    "completed": \<boolean>,
     "achievements": {
         achievementId: {
-            "description": <string>,
-            "date": <int>
+            "description": \<string>,
+            "date": \<int>
         },
         ...
         },
         achievementId: {
-            "description": <string>
+            "description": \<string>
         }
     }
 }
