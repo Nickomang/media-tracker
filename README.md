@@ -12,20 +12,20 @@ The back-end sources data from a single file `'media.json'` that lives in `/data
 
 Each media item (a book, game, movie, etc.) has its own entry in `media.json`. The schema for a media is defined as follows:
 
-```json
-id : {
-    "id": &lt;string>,
-    "name": &lt;string>,
-    "completed": &lt;boolean>,
+```
+<id> : {
+    "id": <string>,
+    "name": <string>,
+    "completed": <boolean>,
     "achievements": {[
-        0: {
-            "description": &lt;string>,
+        <achievementId> {
+            "description": <string>,
             "date": &lt;int>
         },
         ...
         },
-        N: {
-            "description": &lt;string>
+        <achievementId>: {
+            "description": <string>
         }
     ]}
 }
@@ -33,11 +33,11 @@ id : {
 
 Achievements are self-defined milestones of importance. The only required attribute is `description`, everything else is up to the user to determine. For example, watching a movie for the first time may prompt an achievement that looks like this:
 
-```json
+```
 {
 ...
     "achievements": {[
-        "0": {
+        0: {
             "description": "Finished watching for the first time",
             "date": 809247600000
         }
