@@ -45,4 +45,4 @@ Achievements are self-defined milestones of importance. The only required attrib
 }
 ```
 
-The integer stored in date is the number of Milliseconds since the Unix Epoch, which can be calculated using `getTime()` on a `Date` object. See [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime#Examples) for more.
+The integer stored in date is the number of Milliseconds since the [Unix Epoch](https://en.wikipedia.org/wiki/Unix_time), which can be calculated using `getTime()` on a `Date` object. See [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime#Examples) for more.
